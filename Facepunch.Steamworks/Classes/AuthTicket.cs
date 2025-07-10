@@ -5,6 +5,7 @@ namespace Steamworks
 	public class AuthTicket : IDisposable
 	{
 		public byte[] Data;
+  		public int Size;
 		public uint Handle;
 
 		/// <summary>
@@ -19,6 +20,7 @@ namespace Steamworks
 			}
 
 			Handle = 0;
+   			Size = 0;
 			Data = null;
 		}
 
