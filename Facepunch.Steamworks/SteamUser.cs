@@ -414,6 +414,7 @@ namespace Steamworks
 				if ( t.AuthTicket != ticket.Handle ) return;
 				result = t.Result;
 				ticket.Data = t.GubTicket;
+    				ticket.Size = t.Ticket;
 			}
 
 			OnGetTicketForWebApiResponse += f;
